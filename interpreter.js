@@ -48,6 +48,20 @@ function parse(tokens) {
             current++;
             return { type: 'PrintStatement', value: walk() };
         }
+        if (token == 'Haley') {
+            current++;
+            return { type: 'Haley', value: walk() };
+        }
+
+        if (token == 'BlueEgg_000') {
+            current++;
+            return { type: 'BlueEgg_000', value: walk() };
+        }
+
+        if (token == "Nightmare_speakerman") {
+            current++;
+            return { type: 'Nightmare_speakerman', value: walk() };
+        }
 
         if (token === '(') {
             current++;
